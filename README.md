@@ -2,7 +2,7 @@
  Guía realizada como parte del curso para la certificación de Azure Fundamentals
 
 
-### Módulo 1: Introducción a los aspectos básicos de Azure.
+### Conceptos Fundamentales de Azure.
   - **Alta disponibilidad:** según el nivel del servicio, las aplicaciones en la nube pueden funcionar 24/7.
  
   - **Escalabilidad vertical:** la RAM o la CPU pueden aumentarse.
