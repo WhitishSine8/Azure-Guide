@@ -75,5 +75,7 @@ Una cuenta puede tener varias suscripciones con distintos modelos de facturació
  - **Límite de facturación**
  - **Límite de control de acceso**
 
+- **App Service:** es un servicio basado en HTTP que permite crear y hospedar sitios web, aplicaciones, API, etc. sin necesidad de administrar la infraestructura. 
+- **Azure Marketplace:** es una tienda en línea que hospeda aplicaciones certificadas y optimizadas para ejecutarse en Azure. Abarcan cosas como inteligencia artificial o machine learning
 
  
