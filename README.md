@@ -63,6 +63,7 @@
  **Azure Resource Manager**
  Es el servicio de implementación y administración para Azure. Permite crear, actualizar y eliminar los recursos de una cuenta. Con esto puede controlar el acceso, los bloqueos, y las etiquetas para proteger y organizar los recursos luego de implementarlos.
  ![image](https://user-images.githubusercontent.com/74509297/125124039-19ba1b80-e0bd-11eb-97a9-6ed584d29c24.png)
+
 Ventajas:
  - Administrar la infraestructura mediante plantillas en vez de scripts.
  - Controlar, implementar, administrar o supervisar en grupo.
