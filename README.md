@@ -85,6 +85,7 @@ Una cuenta puede tener varias suscripciones con distintos modelos de facturació
       - **Conjunto de escalado de máquinas virtuales:** son un recurso que puede usarse para implementar y administrar un conjunto de VM idénticas.
       - Las VM son una opción ideal cuando se necesita; un control total sobre el sistema operativo, la capacidad para ejecutar software personalizado o para usar configuraciones de hospedaje personalizadas.
   - **Azure container instances:** los contenedores y kubernetes son entornos de aplicación ligeros y virtualizados. Están diseñados para crearse, escalarse horizontalmente y detenerse dinámicamente de forma rápida.
+    - Los contenedores son un entorno de virtualización ligeros diseñados para crearse, escalarse horizontalmente y detenerse. Hay 2 tipos, Azure Container Instances y Azure Kubernetes Service.
   - **Azure App Service:** sirve para compilar, implementar y escalar de forma rápida aplicaciones de API, móviles y web de nivel empresarial que puedan ejecutarse en cualquier plataforma. 
   - **Azure Functions:** es utilizada cuando la unica preocupación es el código que ejecuta el servicio y no la infraestructura o plataforma subyacente. 
  
