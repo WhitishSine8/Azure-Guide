@@ -129,7 +129,103 @@ Después de crear una red virtual se tienen mas opciones para configurar.
 
 Las redes virtuales son mecanismos eficaces y muy configurables para conectar las entidades de Azure. Puede conectar los recursos de Azure entre sí o a los recursos del entorno local. Puede aislar, filtrar y enrutar el tráfico de red. Azure le permite aumentar la seguridad donde considere que es necesario.
 
+### Aspectos básicos de Azure ExpressRoute
+Permite ampliar las redes locales a la nube de Microsoft mediante una conexión privada con la ayuda de un proveedor de conectividad. Hay 2 niveles:
+- **Nivel 2 (L2):**  se trata del nivel de vínculo de datos, que proporciona una comunicación de nodo a nodo entre dos nodos de la misma red.
+- **Nivel 3 (L3):** se trata del nivel de red, que proporciona el direccionamiento y enrutamiento entre los nodos de una red de varios nodos.
 
- 
- ## Módulo #6: Exploración de los servicios de Azure Storage.
- ## Módulo #7: Exploración de los servicios de análisis y bases de datos de Azure.
+** Características y ventajas**
+- Conectividad de nivel 3 entre su red local y Microsoft Cloud a través de un proveedor de conectividad. La conectividad puede ser desde una red de conectividad universal (IP VPN), una red Ethernet de punto a punto, o una conexión cruzada virtual a través de un intercambio de Ethernet.
+- Conectividad de servicios en la nube de Microsoft en todas las regiones dentro de la región geopolítica.
+- Conectividad global a los servicios de Microsoft en todas las regiones con el complemento ExpressRoute Premium.
+- Enrutamiento dinámico entre la red y Microsoft a través de BGP.
+- Redundancia integrada en todas las ubicaciones de configuración entre pares para una mayor confiabilidad.
+- El tiempo de actividad de conexión SLA.
+- Compatibilidad con QoS de Skype para la empresa.
+
+**Redundancia integrada**
+Cada proveedor de conectividad usa dispositivos redundantes para garantizar que las conexiones establecidas con Microsoft tengan alta disponibilidad.
+
+**Conectividad con los servicios en la nube de Microsoft**
+ExpressRoute permite el acceso directo a los siguientes servicios en todas las regiones:
+- Microsoft Office 365
+- Microsoft Dynamics 365
+- Servicios de proceso de Azure, como Azure Virtual Machines
+- Servicios en la nube de Azure, como Azure Cosmos DB y Azure Storage
+
+**Conectividad local con global reach de ExpressRoute**
+Puede permitir que Global Reach de ExpressRoute intercambie datos entre los sitios locales si conecta los diferentes circuitos ExpressRoute. 
+
+**Enrutamiento dinámico**
+ExpressRoute usa el protocolo de enrutamiento Protocolo de puerta de enlace de borde (BGP). BGP se usa para intercambiar rutas entre las redes locales y los recursos que se ejecutan en Azure.
+
+**Modelos conectividad de ExpressRoute**
+ExpressRoute admite tres modelos que puede usar para conectar la red local con la nube de Microsoft:
+- Ubicación de CloudExchange
+- Conexión Ethernet de punto a punto
+- Conexión universal
+![image](https://user-images.githubusercontent.com/74509297/126248615-d30ef6a9-3816-4ba7-966a-747b06cfb318.png)
+
+**Coubicación en un intercambio en la nube**
+Los proveedores de coubicación pueden ofrecer conexiones de nivel 2 y nivel 3 entre la infraestructura, que puede encontrarse en las instalación de la coubicación, y la nube de Microsoft.
+
+**Conexión Ethernet de punto a punto**
+Las conexiones de punto a punto proporcionan conectividad de nivel 2 y nivel 3 entre el sitio local y Azure. Puede conectar sus oficinas o centros de datos a Azure mediante vínculos de punto a punto. 
+
+**Redes universales**
+Puede integrar la red de área extensa (WAN) con Azure si proporciona conexiones a las oficinas y los centros de datos. Con las conexiones universales, todos los proveedores de WAN ofrecen conectividad de nivel 3.
+
+**Consideraciones sobre la seguridad**
+ExpressRoute es una conexión privada de la infraestructura local a la infraestructura de Azure. Incluso si tiene una conexión ExpressRoute, las consultas de DNS, la comprobación de la lista de revocación de certificados y las solicitudes de Azure Content Delivery Network se siguen enviando a través de la red pública de Internet.
+
+## Módulo #6: Exploración de los servicios de Azure Storage.
+Azure Storage no es lo mismo que los servicios de base de datos de Azure. Azure Storage es un servicio que puede usar para almacenar archivos, mensajes, tablas y otros tipos de información.
+
+### Aspectos básicos de Disk Storage
+Proporciona discos para Azure Virtual Machines. Las aplicaciones y otros servicios pueden acceder a estos discos y usarlos cuando sea necesario, igual que se haría en escenarios locales, permite que los datos se almacenen de forma persistente y que se acceda a ellos desde un disco duro virtual conectado.
+
+### Aspectos básicos de Azure Blob Storage
+Azure Blob Storage es una solución de almacenamiento de objetos para la nube. Puede almacenar grandes cantidades de datos, como datos de texto o binario, es no estructurado, lo que significa que no hay ninguna restricción en cuanto a los tipos de datos que puede contener. Además puede administrar miles de cargas simultáneas, cantidades enormes de datos de vídeo, archivos de registro en constante crecimiento y es accesible desde cualquier lugar con conexión a Internet.
+Los blobs no están limitados a formatos de archivo comunes. Un blob podría contener gigabytes de datos binarios transmitidos desde un instrumento científico, un mensaje cifrado para otra aplicación o datos en un formato personalizado para una aplicación que se está desarrollando.
+Blob Storage resulta ideal para lo siguiente:
+- Visualización de imágenes o documentos directamente en un explorador.
+- Almacenamiento de archivos para acceso distribuido.
+- Streaming de audio y vídeo.
+- Almacenamiento de datos para copia de seguridad y restauración, recuperación ante desastres y archivado.
+- Almacenamiento de datos para el análisis en local o en un servicio hospedado de Azure.
+- Almacenamiento de hasta 8 TB de datos para máquinas virtuales.
+Los blobs se almacenan en contenedores, lo que ayuda a organizar los blobs en función de sus necesidades empresariales.
+
+### Aspectos básicos de Azure Files
+Azure Files ofrece recursos compartidos de archivos totalmente administrados en la nube a los que se puede acceder mediante los protocolos del Bloque de mensajes del servidor y Network File System. Los recursos compartidos de Azure se pueden montar simultáneamente en implementaciones de Windows, Linux y macOS en la nube o locales. Las aplicaciones que se ejecutan en máquinas virtuales o servicios en la nube de Azure pueden montar un recurso compartido de almacenamiento de archivos para acceder a datos de archivos.
+Use Azure Files para las siguientes situaciones:
+- Muchas aplicaciones locales usan recursos compartidos de archivos. Azure Files facilita la migración de esas aplicaciones que comparten datos a Azure. Si monta el recurso compartido de archivos en la misma letra de unidad que usa la aplicación local, la parte de la aplicación que accede al recurso compartido de archivos debe funcionar con cambios mínimos, si los hay.
+- Almacene archivos de configuración en un recurso compartido de archivos y acceda a ellos desde varias máquinas virtuales. Las herramientas y utilidades que usen varios desarrolladores de un grupo pueden almacenarse en un recurso compartido de archivos, lo que garantiza que todos los usuarios puedan encontrarlas y que utilizan la misma versión.
+- Escriba datos en un recurso compartido de archivos y procese o analice los datos más adelante. Por ejemplo, puede que desee hacerlo con registros de diagnóstico, métricas y volcados de memoria.
+Una cosa que distingue Azure Files de los archivos ubicados en un recurso compartido de archivos corporativo es que puede tener acceso a los archivos desde cualquier lugar del mundo mediante una dirección URL que apunte al archivo.
+
+### Descripción de los niveles de acceso de blobs.
+
+Azure Storage ofrece diferentes niveles de acceso para el almacenamiento de blobs, lo que le ayuda a almacenar datos de objetos de la manera más rentable. Entre los niveles de acceso disponibles se incluyen:
+- Nivel de acceso frecuente: optimizado para almacenar datos a los que se accede con frecuencia (por ejemplo, imágenes para el sitio web).
+- Nivel de acceso esporádico: optimizado para datos a los que se accede con poca frecuencia y que se almacenan al menos durante 30 días (por ejemplo, las facturas de los clientes).
+- Nivel de acceso de archivo: conveniente para datos a los que raramente se accede y que se almacenan durante al menos 180 días con requisitos de latencia flexibles (por ejemplo, copias de seguridad a largo plazo).
+
+Las siguientes consideraciones se aplican a los distintos niveles de acceso:
+- Solo los niveles de acceso frecuente y esporádico se pueden establecer en el nivel de cuenta. El nivel de acceso de archivo no está disponible en el nivel de cuenta.
+- Los niveles frecuente, esporádico y de archivo se pueden establecer en el nivel de blob durante la carga o después de esta.
+- Los datos del nivel de acceso esporádico pueden tolerar una disponibilidad ligeramente inferior, pero aun así requieren una gran durabilidad, una latencia de recuperación y unas características de rendimiento similares a las de los datos de acceso frecuente. En el caso de los datos de acceso esporádico, un contrato de nivel de servicio (SLA) con una disponibilidad ligeramente inferior y unos costos de acceso mayores, en comparación con los datos de acceso frecuente, es aceptable a cambio de unos costos de almacenamiento menores.
+- El almacenamiento de archivo almacena datos sin conexión y ofrece los menores costos de almacenamiento, pero los mayores costos de acceso y rehidratación de datos.
+
+
+## Módulo #7: Exploración de los servicios de análisis y bases de datos de Azure.
+## Módulo #8: Elegir el mejor servicio de Azure IoT para su aplicación
+## Módulo #9: Elija el mejor servicio de IA para sus necesidades
+## Módulo #10: Elección de la mejor tecnología sin servidor de Azure para su escenario empresarial
+## Módulo #11: Elección de las mejores herramientas para ayudar a que las organizaciones creen mejores soluciones
+
+Examen
+Azure Monitor
+## Módulo #12: Elección de las mejores herramientas para administrar y configurar el entorno de Azure
+## Módulo #13: Elección del mejor servicio de supervisión para visibilidad, información y mitigación de interrupciones
+## Módulo #10:
