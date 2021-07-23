@@ -219,13 +219,28 @@ Las siguientes consideraciones se aplican a los distintos niveles de acceso:
 
 
 ## Módulo #7: Exploración de los servicios de análisis y bases de datos de Azure.
+
+### Azure Cosmos DB
+Azure Cosmos DB es un servicio de base de datos de varios modelos distribuido globalmente, es compatible con los datos sin esquema, lo que le permite compilar aplicaciones "Always On" con una gran capacidad de respuesta para admitir datos en continuo cambio.
+
+![image](https://user-images.githubusercontent.com/74509297/126828538-38b84b63-b0ad-4404-a460-2b8cd6b33dad.png)
+
+### Azure SQL Database
+SQL Database es una base de datos de alto rendimiento, confiable, totalmente administrada y segura. Azure SQL Database es un motor de base de datos de plataforma como servicio (PaaS). Controla la mayoría de las funciones de administración de bases de datos, como las actualizaciones, las aplicaciones de revisiones, las copias de seguridad y la supervisión, sin intervención del usuario.
+
+**Migración**
+Puede migrar las bases de datos existentes de SQL Server con un tiempo de inactividad mínimo mediante Azure Database Migration Service.
+
+
 ## Módulo #8: Elegir el mejor servicio de Azure IoT para su aplicación
 ## Módulo #9: Elija el mejor servicio de IA para sus necesidades
 ## Módulo #10: Elección de la mejor tecnología sin servidor de Azure para su escenario empresarial
 ## Módulo #11: Elección de las mejores herramientas para ayudar a que las organizaciones creen mejores soluciones
 
-Examen
-Azure Monitor
+
 ## Módulo #12: Elección de las mejores herramientas para administrar y configurar el entorno de Azure
 ## Módulo #13: Elección del mejor servicio de supervisión para visibilidad, información y mitigación de interrupciones
 ## Módulo #10:
+
+Examen
+Azure Monitor
