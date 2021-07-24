@@ -231,9 +231,95 @@ SQL Database es una base de datos de alto rendimiento, confiable, totalmente adm
 **Migración**
 Puede migrar las bases de datos existentes de SQL Server con un tiempo de inactividad mínimo mediante Azure Database Migration Service.
 
+### Azure Database for PostgreSQL
+Es un servicio de base de datos relacional en la nube. Ofrece las siguientes ventajas:
+ - Alta disponibilidad integrada en comparación con los recursos locales.
+ - Precios sencillos y flexibles.
+ - Escalado o reducción vertical según sea necesario, en cuestión de segundos. 
+ - Copias de seguridad automáticas ajustables y restauración a un momento dado durante un máximo de 35 días.
+ - Seguridad y cumplimiento de nivel empresarial para proteger la información confidencial en reposo y en movimiento.
+
+Azure Database for PostgreSQL está disponible en dos opciones de implementación: Servidor único e Hiperescala (Citus).
+
+**Servidor único**
+La opción de implementación Un solo servidor ofrece:
+
+- Alta disponibilidad integrada sin coste adicional (contrato de nivel de servicio del 99,99 %).
+- Rendimiento predecible y precios de pago por uso inclusivos.
+- Escalado vertical según sea necesario, en cuestión de segundos.
+- Supervisión y alertas para evaluar el servidor.
+- Seguridad y cumplimiento de nivel empresarial.
+- Capacidad de protección de información confidencial en reposo y en movimiento.
+- Copias de seguridad automáticas y restauración a un momento dado durante un máximo de 35 días.
+
+**Hiperescala (Citus)**
+Escala horizontalmente las consultas entre varias máquinas mediante el particionamiento. Su motor de consultas paraleliza las consultas SQL entrantes en estos servidores para agilizar las respuestas en conjuntos de datos grandes.
+
+### Azure SQL Managed Instance
+Es un servicio de datos en la nube escalable que proporciona la mayor compatibilidad con el motor de base de datos de SQL Server con todas las ventajas de una plataforma como servicio totalmente administrada. En función de su escenario, Azure SQL Managed Instance podría ofrecer más opciones para sus necesidades de base de datos. Es un motor de base de datos de plataforma como servicio (PaaS).
+
+**Migración**
+Azure SQL Managed Instance facilita la migración de los datos locales en SQL Server a la nube con Azure Database Migration Service (DMS) o copias de seguridad y restauración nativas.
+![image](https://user-images.githubusercontent.com/74509297/126855120-5d12befd-fcb2-4304-8dbb-a0ea142bb47d.png)
+
+### Exploración de análisis y macrodatos.
+Microsoft Azure admite una amplia gama de tecnologías y servicios para proporcionar soluciones de macrodatos y análisis, como Azure Synapse Analytics, Azure HDInsight, Azure Databricks y Azure Data Lake Analytics.
+ - **Azure Synapse Analytics:** es un servicio de análisis ilimitado que reúne el almacenamiento de datos empresariales y el análisis de macrodatos.
+ - **Azure HDInsight:** es un servicio de análisis de código abierto totalmente administrado para empresas. Puede ejecutar marcos de código abierto populares y crear tipos de clúster. También admite una amplia gama de escenarios, como la extracción, la transformación y la carga de datos (ETL), el almacenamiento de datos, el aprendizaje automático e IoT.
+ - **Azure Databricks:** le ayuda a descubrir información de todos los datos y a crear soluciones de inteligencia artificial.
+ - **Análisis con Azure Data Lake:** es un servicio de trabajos de análisis a petición que simplifica los macrodatos, escribirá consultas para transformar los datos y extraer ideas valiosas.
+
 
 ## Módulo #8: Elegir el mejor servicio de Azure IoT para su aplicación
+
+### Azure IoT Hub
+Es un servicio administrado hospedado en la nube que actúa como centro de mensajes centralizado para la comunicación bidireccional entre la aplicación de IoT y los dispositivos que administra. Admite las comunicaciones desde el dispositivo a la nube y desde la nube al dispositivo. Una vez que un centro de IoT recibe los mensajes de un dispositivo, puede enrutarlos a otros servicios de Azure. IoT Hub permite ordenar y controlar.
+
+### Azure IoT Central
+Se basa en IoT Hub y agrega un panel que le permite conectar, supervisar y administrar sus dispositivos de IoT. Una parte clave de IoT Central es el uso de las plantillas de dispositivo. Las plantillas de dispositivo permiten conectar un dispositivo sin programación en el lado del servicio.
+
+### Azure Sphere
+Crea una solución de IoT de un extremo a otro de alta seguridad para los clientes que lo abarca todo, desde el hardware y el sistema operativo del dispositivo hasta el método seguro para enviar mensajes desde el dispositivo al centro de mensajes.
+Consta de 3 partes:
+ - La primera parte es la unidad de microcontrolador (MCU) de Azure Sphere, que se encarga de procesar el sistema operativo y las señales de los sensores conectados.
+ - La segunda parte es un sistema operativo (SO) Linux personalizado, que controla la comunicación con el servicio de seguridad y puede ejecutar el software del proveedor.
+ - La tercera parte es el servicio de seguridad de Azure Sphere. Su trabajo es asegurarse de que el dispositivo no se ha puesto en peligro de forma malintencionada.
+
+### Análisis de los criterios de decisión
+Cuando la seguridad es una cuestión fundamental en el diseño del producto, la mejor opción de producto es Azure Sphere, que proporciona una solución completa de un extremo a otro para dispositivos de IoT.
+Azure Sphere garantiza un canal seguro de comunicación entre el dispositivo y Azure mediante el control de todo, desde el hardware hasta el sistema operativo y el proceso de autenticación.
+
+
 ## Módulo #9: Elija el mejor servicio de IA para sus necesidades
+La IA es una clasificación amplia de la informática que permite que un sistema de software perciba su entorno y tome medidas que maximicen sus probabilidades de éxito a la hora de lograr sus objetivos.
+El objetivo de la IA es crear un sistema de software que pueda adaptarse o aprender algo por sí mismo sin estar programado explícitamente para hacerlo.
+
+### Azure Machine Learning
+
+Elija Azure Machine Learning cuando los científicos de datos necesiten un control completo sobre el diseño y el entrenamiento de un algoritmo con sus propios datos.
+Es una plataforma para realizar predicciones, con la que se puede realizar lo siguiente:
+ - Crear un proceso que defina cómo obtener los datos, cómo tratar los datos que faltan o que son incorrectos, cómo dividir los datos en un conjunto de entrenamiento o de pruebas y cómo enviar los datos al proceso de entrenamiento.
+ - Entrenar y evaluar modelos predictivos mediante herramientas y lenguajes de programación conocidos por los científicos de datos.
+ - Crear canalizaciones que definan dónde y cuándo ejecutar los experimentos de proceso intensivo necesarios para puntuar los algoritmos en función de los datos de entrenamiento y de prueba.
+ - Implementar el algoritmo de mejor rendimiento como una API en un punto de conexión para que otras aplicaciones puedan consumirlo en tiempo real.
+
+### Azure Cognitive Services
+
+Use Azure Cognitive Services para solucionar problemas generales, como el análisis de texto para detectar opiniones o el análisis de imágenes para reconocer objetos o caras.
+Azure Cognitive Services proporciona modelos de aprendizaje automático creados previamente que permiten a las aplicaciones ver, oír, hablar, comprender e incluso empezar a pensar. Azure Cognitive Services se puede dividir en las categorías siguientes:
+- Servicios de lenguaje: permita que las aplicaciones procesen lenguaje natural con scripts precompilados, evalúen opiniones y aprendan a reconocer lo que quieren los usuarios.
+- Servicios de voz: convierta voz en texto y texto en voz de sonido natural. Traduzca de un idioma a otro y habilite el reconocimiento y la verificación del hablante.
+- Servicios de visión: agregue capacidades de reconocimiento e identificación al analizar imágenes, vídeos y otro contenido visual.
+- Servicios de decisión: agregue recomendaciones personalizadas para cada usuario que mejoren automáticamente cada vez que se usen, modere contenido para supervisar y quitar el contenido ofensivo o arriesgado y detecte anomalías en los datos de series temporales.
+
+###Azure Bot Service
+
+
+
+
+
+
+
 ## Módulo #10: Elección de la mejor tecnología sin servidor de Azure para su escenario empresarial
 ## Módulo #11: Elección de las mejores herramientas para ayudar a que las organizaciones creen mejores soluciones
 
