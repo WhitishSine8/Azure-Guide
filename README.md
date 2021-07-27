@@ -312,21 +312,69 @@ Azure Cognitive Services proporciona modelos de aprendizaje automático creados 
 - Servicios de visión: agregue capacidades de reconocimiento e identificación al analizar imágenes, vídeos y otro contenido visual.
 - Servicios de decisión: agregue recomendaciones personalizadas para cada usuario que mejoren automáticamente cada vez que se usen, modere contenido para supervisar y quitar el contenido ofensivo o arriesgado y detecte anomalías en los datos de series temporales.
 
-###Azure Bot Service
+### Azure Bot Service (y Bot Framework)
+Son plataformas para crear agentes virtuales que comprenden y responden a preguntas como un ser humano. Azure Bot Service se diferencia de Azure Machine Learning y Azure Cognitive Services en que tiene un caso de uso concreto: *crear un agente virtual que pueda comunicarse de forma inteligente con los usuarios.*
+Los bots se pueden usar para convertir tareas sencillas y repetitivas, como tomar una reserva de cena o recopilar información de perfil, en sistemas automatizados que ya no requieran la intervención humana directa. Los usuarios conversan con un bot mediante texto, tarjetas interactivas y voz.
 
+### Análisis de los criterios de decisión
+**Azure Bot Service**
+Use Azure Bot Service cuando necesite crear un agente virtual para interactuar con los usuarios mediante el lenguaje natural. 
+Antes de entrar de pleno en la creación de una experiencia de chat personalizada con Bot Service, puede que sea mejor buscar soluciones precompiladas sin código que abarquen los escenarios habituales.
 
+**Azure Cognitive Services**
+Use Azure Cognitive Services cuando necesite realizar tareas de uso general, como la conversión de voz en texto, la integración con búsquedas o la identificación de objetos en una imagen. 
 
+El servicio Azure Cognitive Services Personalizer supervisa las acciones de los usuarios en una aplicación. Puede usar Personalizer para predecir su comportamiento y proporcionar experiencias relevantes a medida que identifique patrones de uso.
 
+Elija Azure Machine Learning cuando necesite analizar datos para predecir resultados futuros.
 
+Use Azure Machine Learning para obtener la máxima flexibilidad.
 
 
 ## Módulo #10: Elección de la mejor tecnología sin servidor de Azure para su escenario empresarial
+**Informática sin servidor:** es un término usado para describir un entorno de ejecución que se configura y administra de manera automática. Es un entorno de ejecución hospedado en la nube que ejecuta código, pero abstrae el entorno de hospedaje subyacente.
+
+La idea clave es que el cliente no es responsable de la configuración o el mantenimiento del servidor. El proveedor de la nube se encarga de todo el mantenimiento y el escalado. El cliente crea una instancia del servicio y, después, agrega su código. Suele utilizarse para controlar los escenarios de back-end.
+
+### Azure Functions
+Con este servicio, puede hospedar un único método o función mediante un lenguaje de programación popular en la nube que se ejectura en respuesta a un evento. Se escala automáticamente.
+La solución Azure Functions es ideal si le preocupa solo el código que ejecuta el servicio y no la infraestructura o la plataforma subyacente.
+
+### Azure Logic Apps
+Es una plataforma de desarrollo de poco (o sin) código hospedada como un servicio en la nube. 
+Está diseñado en un entorno web y puede ejectuar una lógica que los servicios de Azure desencadenan sin escribir código. 
+
+### Diferencias entre Azure Functions y Azure Logic Apps
+Puede llamar a Azure Functions desde Azure Logic Apps y viceversa.
+Azure Functions es un servicio informático sin servidor, y Azure Logic Apps está diseñado para ser un servicio de orquestación sin servidor.
+
+
 ## Módulo #11: Elección de las mejores herramientas para ayudar a que las organizaciones creen mejores soluciones
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Módulo #12: Elección de las mejores herramientas para administrar y configurar el entorno de Azure
 ## Módulo #13: Elección del mejor servicio de supervisión para visibilidad, información y mitigación de interrupciones
-## Módulo #10:
+## Módulo #14: Protección frente a amenazas de seguridad en Azure.
+## Módulo #15: Conectividad de red segura en Azure
+## Módulo #16: Acceso seguro a las aplicaciones con servicios de identidad de Azure
+## Módulo #17: Creación de una estrategia de gobernanza en la nube en Azure
+## Módulo #18: Examine los estándares de privacidad, cumplimiento y protección de datos en Azure
+## Módulo #19: Planeación y administración de los costos de Azure
+## Módulo #20: Elección de los servicios de Azure adecuados según los acuerdos de nivel de servicio y el ciclo de vida del servicio
 
 Examen
 Azure Monitor
+Autentificación multifactor: algo que tienes, algo que sabes, algo que eres
+Inovacion, cuando creas algo en la nube
+Migración: mover algo hecho a la nube.
