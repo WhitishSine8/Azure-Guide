@@ -351,19 +351,60 @@ Azure Functions es un servicio informático sin servidor, y Azure Logic Apps est
 
 ## Módulo #11: Elección de las mejores herramientas para ayudar a que las organizaciones creen mejores soluciones
 
+### Azure DevOps Services 
+Es un conjunto de servicios que aborda cada fase del ciclo de vida de desarrollo de software:
+ - **Azure Repos** es un repositorio de código fuente centralizado en el que los profesionales de desarrollo de software, ingeniería DevOps y documentación pueden publicar su código para su revisión y colaboración.
+ - **Azure Boards** es un conjunto de administración de proyectos ágil que incluye paneles Kanban, informes, ideas de seguimiento y trabajo desde epopeyas de alto nivel hasta incidencias y elementos de trabajo.
+ - **Azure Pipelines** es una herramienta de automatización de canalizaciones de CI/CD.
+ - **Azure Artifacts** es un repositorio para hospedar artefactos, como código fuente compilado, que se puede incluir en los pasos de canalización de pruebas o de implementación.
+ - **Azure Test Plans** es una herramienta de pruebas automatizadas que se puede usar en una canalización de CI/CD para garantizar la calidad antes de publicar una versión de software.
 
-
-
-
-
-
-
-
-
-
+### Azure DevTest Labs
+Proporciona un medio automatizado para administrar el proceso de compilación, configuración y anulación de máquinas virtuales que contienen las compilaciones de los proyectos de software.
+Cualquier cosa que se pueda implementar en Azure a través de una plantilla de Resource Manager se puede aprovisionar a través de DevTest Labs.
+Si su objetivo es automatizar la creación y la administración de un entorno de laboratorio de pruebas, considere la posibilidad de elegir Azure DevTest Labs. De las tres herramientas y servicios que hemos descrito, es el único que ofrece esta funcionalidad.
 
 
 ## Módulo #12: Elección de las mejores herramientas para administrar y configurar el entorno de Azure
+Mediante las herramientas de administración de Azure, los administradores y desarrolladores pueden interactuar con el entorno de nube para realizar tareas como:
+
+ - Implementar decenas o cientos de recursos a la vez.
+ - Configurar servicios individuales mediante programación.
+ - Ver informes enriquecidos relativos al uso, el mantenimiento, los costos y mucho más.
+
+Hay dos categorías amplias de herramientas de administración: herramientas visuales y herramientas basadas en código.
+ - Herramientas visuales: proporcionan acceso completo y visualmente sencillo a toda la funcionalidad de Azure. Sin embargo son menos útiles para configurar una gran implementación de recursos con interdependencias y opciones de configuración.
+ - Herramienta basada en código: se usa para intentar instalar y configurar rápidamente los recursos de Azure. 
+
+### Infraestructura como código
+ - Código imperativo: detalla cada uno de los pasos que debe realizarse para lograr un resultado deseado.
+ - Código declarativo: detalla un resultado deseado, y el intérprete debe luego decidir cual es la mejor forma de lograr este resultado.
+
+**Azure Portal** 
+Dispone de una UI gráfica sencilla en la que se pueden ver todos los servicios que se están usando, crear servicios nuevos, configurar los servicios y ver informes. Con Azure Portal puede realizar la mayoría de las acciones administrativas.
+Azure Portal es un lugar excelente para que los principiantes obtengan información sobre Azure y configuren sus primeros recursos.
+
+**Azure Mobile App**
+Le permite acceder a los recursos de Azure desde iOS y Android cuando no tiene el equipo a mano.
+ - Supervisar el mantenimiento y el estado de sus recursos de Azure.
+ - Consultar alertas, diagnosticar y corregir problemas rápidamente, reiniciar una aplicación web o una máquina virtual (VM).
+ - Ejecutar comandos de la CLI de Azure o de Azure PowerShell para administrar los recursos de Azure.
+
+**Azure PowerShell**
+Es un shell que permite a los desarrolladores, y profesionales de TI y DevOps ejecutar comandos denominados cmdlets o command-lets.
+ - La configuración de rutinas, la anulación y el mantenimiento de un único recurso o de varios recursos conectados.
+ - La implementación de una infraestructura completa, que puede contener decenas o cientos de recursos, de código imperativo.
+Azure PowerShell y la CLI de Azure son herramientas de administración de Azure que le permiten obtener rápidamente la dirección IP de una máquina virtual (VM) que ha implementado, reiniciar una VM o escalar una aplicación. 
+
+**Azure CLI**
+La CLI de Azure le permite usar Bash para ejecutar tareas puntuales en Azure.
+
+**Plantillas de ARM**
+Al usar las plantillas de Azure Resource Manager (ARM), puede describir los recursos que quiere usar en un formato JSON declarativo.
+Definen los requisitos de infraestructura de la aplicación para implementaciones que se repiten. 
+Las plantillas de Resource Manager son la mejor opción de infraestructura como código para configurar de manera rápida y fiable toda la infraestructura en la nube de forma declarativa.
+
+
 ## Módulo #13: Elección del mejor servicio de supervisión para visibilidad, información y mitigación de interrupciones
 ## Módulo #14: Protección frente a amenazas de seguridad en Azure.
 ## Módulo #15: Conectividad de red segura en Azure
@@ -378,3 +419,4 @@ Azure Monitor
 Autentificación multifactor: algo que tienes, algo que sabes, algo que eres
 Inovacion, cuando creas algo en la nube
 Migración: mover algo hecho a la nube.
+Azure government es solo para instancias de gobierno de EUA
