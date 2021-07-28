@@ -406,9 +406,175 @@ Las plantillas de Resource Manager son la mejor opción de infraestructura como 
 
 
 ## Módulo #13: Elección del mejor servicio de supervisión para visibilidad, información y mitigación de interrupciones
+
+###Azure Advisor
+Elija Azure Advisor si quiere realizar un análisis de los recursos implementados.
+Azure Advisor es la opción de producto adecuada para ayudar a optimizar y entender mejor su gasto y su postura de seguridad en la nube. 
+Evalúa los recursos de Azure y hace recomendaciones que contribuyen a mejorar la confiabilidad, la seguridad y el rendimiento, lograr la excelencia operativa y reducir los costos.
+El panel Advisor de Azure Portal muestra recomendaciones personalizadas para todas las suscripciones. Las recomendaciones se dividen en cinco categorías:
+ - Confiabilidad: se usa para garantizar y mejorar la continuidad de las aplicaciones críticas para la empresa.
+ - Seguridad: se usa para detectar amenazas y vulnerabilidades que podrían dar lugar a infracciones de seguridad.
+ - Rendimiento: se usa para mejorar la velocidad de las aplicaciones.
+ - Costos: se usan para optimizar y reducir el gasto general de Azure.
+ - Excelencia operativa: se usa para conseguir procedimientos recomendados de eficiencia en procesos y flujos de trabajo, manejabilidad de los recursos e implementación.
+
+
+### Azure Monitor
+Elija Azure Monitor si quiere medir eventos personalizados y otros datos de telemetría recopilados, además de configurar alertas de eventos clave relacionados con sus recursos específicos.
+Es una plataforma que permite recopilar, analizar y mostrar datos, así como llevar a cabo acciones en función de las métricas y los datos registrados en todo el entorno local y de Azure.
+
+![image](https://user-images.githubusercontent.com/74509297/127340460-2a1cf982-1d5e-4239-bcd9-a1200a734fa2.png)
+
+ - A la izquierda aparece una lista de los orígenes de los datos de métricas y registros,
+ - En el centro, puede ver cómo se almacenan los datos de registro y métricas en los repositorios centrales.
+ - A la derecha, los datos se usan de diversas formas.
+Puede usar los datos para ayudarle a reaccionar ante eventos críticos en tiempo real gracias a las alertas enviadas a los equipos por SMS, correo electrónico, etc.
+
+### Azure Service Health
+Si quiere mantener un control de Azure, especialmente de los servicios y regiones de los que dependa, debe elegir Azure Service Health. 
+Proporciona una vista personalizada del estado de los servicios, regiones y recursos de Azure en los que se basa su infraestructura. Service Health le ayuda a supervisar varios tipos de eventos:
+ - Los problemas de servicio son problemas de Azure, como las interrupciones, que le afectan en este momento. 
+ - Mantenimiento planeado: este tipo de eventos pueden afectar a la disponibilidad. P
+ - Avisos de estado: son problemas que exigen actuar para evitar la interrupción del servicio, e incluyen retiradas del servicio y cambios importantes. Los avisos de estado se anuncian con mucha antelación para que pueda planear su respuesta.
+
+
 ## Módulo #14: Protección frente a amenazas de seguridad en Azure.
+
+### Azure Security Center
+Es un servicio de supervisión que proporciona visibilidad del nivel de seguridad en todos los servicios, tanto en Azure como en el entorno local.
+**Nivel de seguridad:** se refiere a las directivas y a los controles de ciberseguridad, así como a la predicción, la prevención y la respuesta a las amenazas de seguridad.
+Security Center puede:
+ - Supervisar la configuración de seguridad en las cargas de trabajo locales y en la nube.
+ - Aplicar automáticamente la configuración de seguridad necesaria a los nuevos recursos a medida que se publican en línea.
+ - Proporcionar recomendaciones de seguridad basadas en las configuraciones, los recursos y las redes actuales.
+ - Supervisar de forma continua los recursos y realizar valoraciones de seguridad automáticas para identificar posibles vulnerabilidades antes de que alguien las aproveche.
+ - Usar el aprendizaje automático para detectar y bloquear la instalación de malware en las máquinas virtuales (VM) y otros recursos. 
+ - Detectar y analizar posibles ataques entrantes e investigar amenazas y otras actividades posteriores a una brecha que pudieran haberse producido.
+ - Proporcionar control de acceso Just-in-Time a los puertos de red. 
+
+**Puntuación de seguridad:** es una medida de nivel de seguridad de una organización. Se basa en controles de seguridad, o en grupos de recomendaciones de seguridad relacionadas. La puntuación de seguridad ayuda a:
+ - Notificar el estado actual del nivel de seguridad de la organización.
+ - Mejorar el nivel de seguridad al proporcionar detectabilidad, visibilidad, orientación y control.
+ - Comparar con los puntos de referencia y establecer indicadores clave de rendimiento (KPI).
+
+**Protección contra amenazas**
+Security Center incluye funciones avanzadas de defensa en la nube para máquinas virtuales, seguridad de red e integridad de archivos:
+ - Acceso de máquina virtual Just-In-Time
+ - Controles de aplicación adaptables
+ - Protección de red adaptable
+ - Supervisión de la integridad de los archivos
+
+### Azure Sentinel
+Azure Sentinel permite:
+ - **Recopilar datos en la nube a gran escala:** Recopile datos de todos los usuarios, dispositivos, aplicaciones e infraestructura, tanto locales como de varias nubes.
+ - **Detectar amenazas no detectadas anteriormente:** Minimice los falsos positivos mediante el análisis exhaustivo y la inteligencia sobre amenazas de Microsoft.
+ - **Investigar amenazas con inteligencia artificial:** Examine actividades sospechosas a gran escala y aproveche años de experiencia de ciberseguridad de Microsoft.
+ - **Responder a incidentes rápidamente:** Use la orquestación integrada y la automatización de tareas comunes.
+ - **Conexión de soluciones de Microsoft:** los conectores proporcionan integración en tiempo real para servicios como las soluciones de Protección contra amenazas de Microsoft, orígenes de Microsoft 365 (incluido Office 365), Azure Active Directory y Firewall de Windows Defender.
+ - **Conexión con otros servicios y soluciones:** Hay conectores disponibles para servicios y soluciones comunes que no son de Microsoft, incluidos AWS CloudTrail, Citrix Analytics (Security), Sophos XG Firewall, VMware Carbon Black Cloud y Okta SSO.
+ - **Conexión con orígenes de datos estándar del sector:** Azure Sentinel admite datos de otros orígenes que usan el estándar de mensajería Formato de evento común (CEF), Syslog o la API REST.
+
+**Análisis integrados:** usan plantillas diseñadas por el equipo de expertos y analistas de seguridad de Microsoft que se basan en amenazas conocidas, vectores de ataque comunes y cadenas de escalado de actividades sospechosas.
+**Análisis personalizados:** son reglas que se crean para buscar criterios concretos en el entorno.
+
+### Azure Key Vault
+Es un servicio en la nube centralizado para almacenar los secretos de la aplicación en una única ubicación central, puede ayudar a:
+ - Administrar contraseñas, tokens, certificados, etc.
+ - Administrar claves de cifrado.
+ - Administrar certificados SSL/TLS
+ - Almancenar secretos respaldados por módulos de seguridad de hardware.
+
+**Ventajas**
+ - Secretos de aplicación centralizados
+ - Secretos y claves almacenados de forma segura
+ - Supervisión y control de acceso
+ - Administración simplificada de secretos de aplicación
+ - Integración con otros servicios de Azure
+
+### Azure Dedicated Host
+
+Azure Dedicated Host:
+
+ - Ofrece visibilidad y control sobre la infraestructura de servidor que ejecuta las máquinas virtuales de Azure.
+ - Ayuda a satisfacer requisitos de cumplimiento mediante la implementación de las cargas de trabajo en un servidor aislado.
+ - Permite elegir el número de procesadores, capacidades de servidor, series de máquinas virtuales y tamaños de máquina virtual dentro del mismo host.
+
+
 ## Módulo #15: Conectividad de red segura en Azure
+**Defensa en profundidad:** su objetivo es proteger la información y evitar que personas no autoriazadas a acceder a ella puedan sustraerla.
+**Capas de la defensa en profundidad**
+![image](https://user-images.githubusercontent.com/74509297/127354418-d36a0b22-4b99-467e-87f9-256f5b4ece7b.png)
+ - **Seguridad física:** es la primera línea de defensa para proteger el hardware informático del centro de datos. La protección física del acceso a los edificios y el control del acceso al hardware de proceso del centro de datos son la primera línea de defensa.
+ - **Identidad y acceso:** controla el acceso a la infraestructura y al control de cambios. En esta capa, es importante que realice lo siguiente:
+   - Controle el acceso a la infraestructura y al control de cambios.
+   - Use el inicio de sesión único (SSO)y la autenticación multifactor.
+   - Audite los eventos y los cambios.
+ - **Capa Perimetral:**  usa protección frente a ataques de denegación de servicio distribuido (DDoS) para filtrar los ataques a gran escala antes de que puedan causar una denegación de servicio para los usuarios. En esta capa, es importante que realice lo siguiente:
+   - Use protección contra DDoS para filtrar los ataques a gran escala antes de que puedan afectar a la disponibilidad de un sistema para los usuarios.
+   - Use firewalls perimetrales para identificar los ataques malintencionados contra la red y alertar sobre ellos.
+ - **Capa de red:** limita la comunicación entre los recursos a través de controles de acceso y segmentación. En esta capa, es importante que realice lo siguiente:
+   - Limite la comunicación entre los recursos.
+   - Deniegue de forma predeterminada.
+   - Restrinja el acceso entrante de Internet y limite el saliente cuando sea apropiado.
+   - Implemente conectividad segura a las redes locales.
+ - **Capa de proceso:** protege el acceso a las máquinas virtuales. En esta capa, es importante que realice lo siguiente:
+   - Proteja el acceso a las máquinas virtuales.
+   - Implemente la protección del punto de conexión de los dispositivos y mantenga los sistemas revisados y actualizados.
+ - **Capa de aplicación:** ayuda a garantizar que las aplicaciones sean segurdas y estén libres de vulnerabilidades de seguridad.En esta capa, es importante que realice lo siguiente:
+   - Garantice que las aplicaciones son seguras y están libres de vulnerabilidades.
+   - Almacene los secretos de aplicación confidenciales en un medio de almacenamiento seguro.
+   - Convierta la seguridad en un requisito de diseño en todo el desarrollo de aplicaciones.
+ - **Capa de datos:** controla el acceso a los datos empresariales y de clientes que es necesario proteger. En casi todos los casos, los atacantes intentan conseguir datos:
+   - Almacenados en una base de datos.
+   - Almacenados en discos en máquinas virtuales.
+   - Almacenados en aplicaciones de software como servicio (SaaS), como Office 365.
+   - Administrados mediante el almacenamiento en la nube.
+ 
+### Posición de seguridad
+El nivel de seguridad es la capacidad de su organización de protegerse frente a amenazas de seguridad y responder a ellas
+ - **Confidencialidad:** el principio de privilegios mínimos implica restringir el acceso a la información únicamente a los usuarios a las que se concede acceso de forma explícita, solo al nivel necesario para realizar su trabajo.
+ - **Integridad:** Evitar cambios no autorizados en la información:
+   - En reposo: cuando se almacenan.
+   - En tránsito: cuando se transfieren de un lugar a otro, incluido desde un equipo local a la nube.
+ - **Disponibilidad:** Asegúrese de que los servicios funcionan y que solo pueden acceder a ellos los usuarios autorizados.
+ 
+### Azure Firewall
+Es un servicio de seguridad de red administrado y basado en la nube que ayuda a proteger los recursos en las redes virtuales de Azure.
+![image](https://user-images.githubusercontent.com/74509297/127358650-0e759a75-06bb-4846-9f8f-8c230a001ba4.png)
+
+Azure Firewall proporciona muchas características, entre las que se incluyen:
+ - Alta disponibilidad integrada
+ - Escalabilidad en la nube sin restricciones.
+ - Reglas de filtrado entrante y saliente.
+ - Compatibilidad con la traducción de direcciones de red de destino (DNAT).
+ - El registro de Azure Monitor.
+
+Con Azure Firewall puede configurar:
+ - Reglas de aplicación que definen los nombres de dominio completos (FQDN) a los que se puede acceder desde una subred.
+ - Reglas de red que definen la dirección de origen, el protocolo, el puerto de destino y la dirección de destino.
+ - Reglas de traducción de direcciones de red (NAT) que definen los puertos y las direcciones IP de destino para traducir las solicitudes entrantes.
+
+
 ## Módulo #16: Acceso seguro a las aplicaciones con servicios de identidad de Azure
+**Autenticación:** es el proceso de establecimiento de la identidad de una persona o servicio que quiere acceder a un recurso. 
+**Autorización:** es el proceso de establecer el nivel de acceso que tiene una persona o un servicio auttenticados.
+![image](https://user-images.githubusercontent.com/74509297/127361634-c8e31287-e36a-4461-8dfe-46b7fde0788d.png)
+
+### Azure Active Directory
+Azure AD proporciona servicios como:
+ - **Autenticación:** esto incluye la comprobación de la identidad para acceder a aplicaciones y recursos. También incluye funciones como el autoservicio de restablecimiento de contraseña, la autenticación multifactor, una lista personalizada de contraseñas prohibidas y servicios de bloqueo inteligente.
+ - **Inicio de sesión único:** Gracias al SSO, los usuarios tienen que recordar un solo identificador y una sola contraseña para acceder a varias aplicaciones. Una sola identidad está asociada a un usuario, lo que simplifica el modelo de seguridad.
+ - **Administración de aplicaciones:** Con Azure AD, puede administrar las aplicaciones en la nube y locales. 
+ - **Administración de dispositivos:** Además de cuentas de usuarios individuales, Azure AD admite el registro de dispositivos. 
+
+
+
+
+
+
+
+
+
 ## Módulo #17: Creación de una estrategia de gobernanza en la nube en Azure
 ## Módulo #18: Examine los estándares de privacidad, cumplimiento y protección de datos en Azure
 ## Módulo #19: Planeación y administración de los costos de Azure
