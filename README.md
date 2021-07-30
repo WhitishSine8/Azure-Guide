@@ -568,15 +568,18 @@ Azure AD proporciona servicios como:
  - **Administración de dispositivos:** Además de cuentas de usuarios individuales, Azure AD admite el registro de dispositivos. 
 
 
-
-
-
-
-
-
-
 ## Módulo #17: Creación de una estrategia de gobernanza en la nube en Azure
+
+
 ## Módulo #18: Examine los estándares de privacidad, cumplimiento y protección de datos en Azure
+**Cumplimiento:** significa cumplir una ley, estándar o conjunto de directrices
+**Cumplimiento normativo:** hace referencia a la disciplina y al proceso de garantizar que una empresa sigue las leyes que establecen los organismos competentes.
+**Control:** como un estándar conocido con el que puede comparar su solución para garantizar la seguridad
+
+
+
+
+
 ## Módulo #19: Planeación y administración de los costos de Azure
 ## Módulo #20: Elección de los servicios de Azure adecuados según los acuerdos de nivel de servicio y el ciclo de vida del servicio
 
